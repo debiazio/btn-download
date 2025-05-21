@@ -1,0 +1,26 @@
+{
+  "btn-bella-8l": {
+    "component": "labelle-manual"
+  },
+  "btn-bella-5l": {
+    "component": "labelle5l-manual"
+  },
+  "btn-vida-21l": {
+    "component": "vida-21l"
+  },
+  "btn-vida-varios": {
+    "component": "vida-varios"
+  },
+  "btn-vida-75l": {
+    "component": "vida-75"
+  },
+  "btn-opta-12l": {
+    "component": "opta-12l"
+  },
+  "btn-bellinha": {
+    "component": "bellinha"
+  },
+  "btn-idealclave": {
+    "component": "idealclave"
+  }
+}
