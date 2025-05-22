@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles.css';
 
 
 const BtDownload = () => {
@@ -12,22 +13,9 @@ const BtDownload = () => {
   };
 
   return (
-    <button className="btn-download" onClick={handleDownload}
-    style={{
-    backgroundColor: '#FC87FC',
-    padding: '12px',
-    color: 'white',
-    fontWeight: 'bold',
-    borderRadius: '25px',
-    margin: '5px',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'transform 0.1s ease',
-  }}
-    >
+    <button className={styles['btn-download']} onClick={handleDownload}>
       BAIXAR MANUAL
     </button>
-
   );
 };
 
