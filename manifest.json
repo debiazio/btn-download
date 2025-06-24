@@ -2,7 +2,7 @@
   "vendor": "mfmgroup",
   "name": "btdownload",
   "version": "0.0.8",
-  "title": "bannerroll",
+  "title": "btdownload",
   "description": "App para fazer o banner rolar",
   "builders": {
     "react": "3.x",
