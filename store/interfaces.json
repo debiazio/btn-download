@@ -22,5 +22,11 @@
   },
   "btn-idealclave": {
     "component": "idealclave"
+  },
+  "btn-extra": {
+    "component": "extra"
+  },
+  "btn-flex": {
+    "component": "flex"
   }
 }
