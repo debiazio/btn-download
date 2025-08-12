@@ -1,7 +1,7 @@
 {
   "vendor": "mfmgroup",
   "name": "btdownload",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "title": "btdownload",
   "description": "App para fazer o banner rolar",
   "builders": {
