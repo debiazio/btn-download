@@ -4,8 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/Manual_ DIGITAL IDEALCLAVE_5L - SETEMBRO 17-25.zip';
-    link.download = 'STM-Manual-La-Belle-8L-2024.pdf';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/novembro2025/Manual_%20DIGITAL%20IDEALCLAVE_5L-bellinha%20-%20OUTUBRO%2025.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

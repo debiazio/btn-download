@@ -8,20 +8,38 @@
   "btn-vida-21l": {
     "component": "vida-21l"
   },
+  "btn-vida-21l-ft": {
+    "component": "vida-21l-ft"
+  },
   "btn-vida-varios": {
     "component": "vida-varios"
+  },
+  "btn-vida-varios-ft": {
+    "component": "vida-varios-ft"
   },
   "btn-vida-75l": {
     "component": "vida-75"
   },
+  "btn-vida-75l-ft": {
+    "component": "vida-75-ft"
+  },
   "btn-opta-12l": {
     "component": "opta-12l"
+  },
+  "btn-opta-12l-ft": {
+    "component": "opta-12l-ft"
   },
   "btn-bellinha": {
     "component": "bellinha"
   },
+  "btn-bellinha-ft": {
+    "component": "bellinha-ft"
+  },
   "btn-idealclave": {
     "component": "idealclave"
+  },
+  "btn-idealclave-ft": {
+    "component": "idealclave-ft"
   },
   "btn-extra": {
     "component": "extra"
