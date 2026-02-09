@@ -3992,9 +3992,9 @@ merge-stream@^2.0.0:
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
   integrity sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
 
-"mfmgroup.btdownload@https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.btdownload@0.0.13+build1757165156/public/@types/mfmgroup.btdownload":
-  version "0.0.13"
-  resolved "https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.btdownload@0.0.13+build1757165156/public/@types/mfmgroup.btdownload#0f11c27f90f39319f33297d218aa3d04ae01eb9b"
+"mfmgroup.btdownload@http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.btdownload@0.0.17/public/@types/mfmgroup.btdownload":
+  version "0.0.17"
+  resolved "http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.btdownload@0.0.17/public/@types/mfmgroup.btdownload#d15fd82f3899101500447b5a1b0df01a9f28c3e0"
 
 micromatch@^3.1.4:
   version "3.1.10"
