@@ -4,7 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/novembro2025/FT-idealclave_LA%20BELLE%208L.zip';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/fev26/fichas-tecnicas/ft-la-belle-8l.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

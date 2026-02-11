@@ -4,7 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/novembro2025/FT_BELLINHA%205L.zip';
+    link.href = 'https://stermax.com.br/images_idealine/fev26/fichas-tecnicas/ft-bellinha-5l.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
