@@ -4,8 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/Manual Linha FLEX.zip';
-    link.download = 'STM-Manual-La-Belle-8L-2024.pdf';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/marco/Manual_Linha%20FLEX%20-%20Rev.02_2024.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -19,3 +18,6 @@ const BtDownload = () => {
 };
 
 export default BtDownload;
+
+
+
