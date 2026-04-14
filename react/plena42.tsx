@@ -12,7 +12,7 @@ const BtDownload = () => {
 
   return (
     <button className={styles['btn-download']} onClick={handleDownload}>
-      BAIXAR FICHA TÉCNICA
+      BAIXAR MANUAL
     </button>
   );
 };
