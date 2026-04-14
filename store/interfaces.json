@@ -46,5 +46,11 @@
   },
   "btn-flex": {
     "component": "flex"
+  },
+  "btn-plena42":{
+    "component": "plena42"
+  },
+  "btn-plena42-ft":{
+    "component": "plena42-ft"
   }
 }
