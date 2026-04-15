@@ -4,7 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/STM-Manual-La-Belle-8L-2024.zip';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/abril/FT_LA%20BELLE%208L.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

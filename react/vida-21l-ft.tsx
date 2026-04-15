@@ -4,7 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/fev26/fichas-tecnicas/ft-vida-21l.zip';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/abril/FT.VIDA21L-%20ATUALIZADO.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

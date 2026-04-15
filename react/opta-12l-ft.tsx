@@ -4,7 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/fev26/fichas-tecnicas/ft-opta-12l-21l.zip';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/abril/FT.OPTA12L.21L-%20%20ATUALIZADO.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

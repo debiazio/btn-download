@@ -4,7 +4,7 @@ import styles from './styles.css';
 const BtDownload = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://stermax.com.br/images_idealine/manuais/FT.PLENA%2042.zip';
+    link.href = 'https://stermax.com.br/images_idealine/manuais/abril/FT.PLENA%2042.zip';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
