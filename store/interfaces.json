@@ -4,5 +4,8 @@
   },
   "btn-linha-set": {
     "component": "linha-set"
+  },
+  "btn-nossas-linhas": {
+    "component": "nossas-linhas"
   }
 }
