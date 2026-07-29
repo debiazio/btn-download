@@ -1,9 +1,9 @@
 {
-  "vendor": "mfmgroup",
+  "vendor": "madumfm2",
   "name": "btdownload",
-  "version": "0.0.24",
+  "version": "0.0.0",
   "title": "btdownload",
-  "description": "App para fazer o banner rolar",
+  "description": "App disponbilizar botao para download do catálogo",
   "builders": {
     "react": "3.x",
     "messages": "1.x",

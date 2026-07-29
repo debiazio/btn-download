@@ -1,22 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
 .btn-download {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
-  background-color: #e95296;
+  padding: 13px;
+  background-color: #4CAB86;
   color: white;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 100px;
   margin: 5px 0px;
-  box-shadow: 5px 3px 5px #959494;
-  border: none;
   cursor: pointer;
+  width: 100%;
+  border: none;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
-.btn-download:hover{
-  background-color: #ad3d70;
+.btn-download:hover {
+  background-color: #80C2A8;
 }
-
