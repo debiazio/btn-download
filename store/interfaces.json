@@ -13,5 +13,11 @@
   },
   "componente-link-consultor": {
     "component": "componente-link-consultor"
+  },
+  "componente-link-custom-bannerVerde": {
+    "component": "componente-link-custom-bannerVerde"
+  },
+  "componente-link-consultor-bannerVerde": {
+    "component": "componente-link-consultor-bannerVerde"
   }
 }
