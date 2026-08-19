@@ -7,5 +7,11 @@
   },
   "btn-nossas-linhas": {
     "component": "nossas-linhas"
+  },
+  "componente-link-custom": {
+    "component": "componente-link-custom"
+  },
+  "componente-link-consultor": {
+    "component": "componente-link-consultor"
   }
 }
