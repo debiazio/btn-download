@@ -8,6 +8,9 @@
   "btn-nossas-linhas": {
     "component": "nossas-linhas"
   },
+  "btn-linha-box": {
+    "component": "linha-box"
+  },
   "componente-link-custom": {
     "component": "componente-link-custom"
   },
