@@ -22,5 +22,8 @@
   },
   "componente-link-consultor-bannerVerde": {
     "component": "componente-link-consultor-bannerVerde"
+  },
+  "queridinhos-msg":{
+    "component": "queridinhos-msg"
   }
 }
