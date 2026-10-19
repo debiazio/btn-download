@@ -28,7 +28,7 @@ const QueridinhosMaduMessage: React.FC = () => {
       }}
       >Queridinhos MAD.U: os mais escolhidos por hospitais e clínicas</h1>
       <p>Carrinhos, bins e maletas modulares para organizar o atendimento em hospitais, clínicas, consultórios odontológicos e veterinários.
-Mobiliário técnico com tecnologia antimicrobiana, fabricado no Brasil pelo Grupo MFM.</p>
+Mobiliário técnico com tecnologia antimicrobiana, fabricado no Brasil pela MAD.U</p>
     </div>
   )
 }
