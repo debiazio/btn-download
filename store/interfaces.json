@@ -25,5 +25,20 @@
   },
   "queridinhos-msg":{
     "component": "queridinhos-msg"
+  },
+  "renderiza-preco-ondonto-563":{
+    "component": "renderizapreco563"
+  },
+  "renderiza-preco-ondonto-566-monte":{
+    "component": "renderizapreco566monte"
+  },
+  "renderiza-preco-ondonto-557-monte":{
+    "component": "renderizapreco557monte"
+  },
+  "renderiza-preco-ondonto-566":{
+    "component": "renderizapreco566"
+  },
+  "renderiza-preco-ondonto-551":{
+    "component": "renderizapreco551"
   }
 }
