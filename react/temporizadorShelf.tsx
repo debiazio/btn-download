@@ -7,7 +7,6 @@ type PropsShelfTimer = {
 
 function ShelfTimer({ endDate }: PropsShelfTimer) {
   const [timeLeft, setTimeLeft] = useState<number | null>(null)
-  const [isActive, setIsActive] = useState(false)
 
   // Contagem regressiva a partir de agora até a data/hora finais
   useEffect(() => {
@@ -15,8 +14,7 @@ function ShelfTimer({ endDate }: PropsShelfTimer) {
 
     // Sem data final válida, o contador não inicia
     if (!endDate || isNaN(targetTime)) {
-      setIsActive(false)
-      setTimeLeft(0)
+      setTimeLeft(null)
       return
     }
 
@@ -26,11 +24,9 @@ function ShelfTimer({ endDate }: PropsShelfTimer) {
 
       if (diff <= 0) {
         // Chegou a zero: para e desaparece
-        setIsActive(false)
         setTimeLeft(0)
         clearInterval(interval)
       } else {
-        setIsActive(true)
         setTimeLeft(diff)
       }
     }
@@ -67,71 +63,64 @@ function ShelfTimer({ endDate }: PropsShelfTimer) {
     }
   }
 
-  // Mostra ou esconde a prateleira quando o estado muda
-  useEffect(() => {
-    const handleShelfVisibility = () => {
-      const shelf = document.querySelector(
-        '.vtex-flex-layout-0-x-flexRow--linha-shelf-timer'
-      ) as HTMLElement | null
-      if (shelf) {
-        shelf.style.display = isActive ? 'flex' : 'none'
-      }
-    }
+  // Sem data válida ou contagem encerrada: oculta o banner inteiro
+  if (timeLeft === null || timeLeft <= 0) {
+    return null
+  }
 
-    handleShelfVisibility()
-
-    // Caso a prateleira ainda não exista no DOM, observamos mudanças
-    const observer = new MutationObserver(() => handleShelfVisibility())
-    observer.observe(document.body, { childList: true, subtree: true })
-
-    return () => observer.disconnect()
-  }, [isActive])
-
-  const formatted = timeLeft
-    ? formatTime(timeLeft)
-    : { type: 'clock' as const, hours: '00', minutes: '00', seconds: '00' }
+  const formatted = formatTime(timeLeft)
 
   return (
     <div className={styles.timerContainer}>
-      {timeLeft !== null && timeLeft > 0 && (
-        <div className={styles.timerBox}>
-          {formatted.type === 'clock' ? (
+      <div className={styles.timerBox}>
+        {formatted.type === 'clock' ? (
+          <div className={styles.clockWrapper}>
+            <div className={styles.faltamLabel}>
+              Faltam
+              <span className={styles.ellipsis} aria-hidden="true">
+                <span className={styles.dot}>.</span>
+                <span className={styles.dot}>.</span>
+                <span className={styles.dot}>.</span>
+              </span>
+            </div>
             <div className={styles.timeGroup}>
               {formatted.hours.split('').map((digit, i) => (
-                <span key={`h-${i}`} className={styles.digit}>
+                <span key={`h-${i}-${digit}`} className={styles.digit}>
                   {digit}
                 </span>
               ))}
               <span className={styles.separator}>:</span>
               {formatted.minutes.split('').map((digit, i) => (
-                <span key={`m-${i}`} className={styles.digit}>
+                <span key={`m-${i}-${digit}`} className={styles.digit}>
                   {digit}
                 </span>
               ))}
               <span className={styles.separator}>:</span>
               {formatted.seconds.split('').map((digit, i) => (
-                <span key={`s-${i}`} className={styles.digit}>
+                <span key={`s-${i}-${digit}`} className={styles.digit}>
                   {digit}
                 </span>
               ))}
             </div>
-          ) : (
-            <div
-              style={{
-                color: 'white',
-                fontFamily: "'Montserrat', sans-serif",
-                fontWeight: 700,
-                fontSize: 'clamp(1.4rem, 4vw, 2.4rem)',
-                textAlign: 'center',
-                lineHeight: 1.2,
-              }}
-            >
-              Faltam {formatted.days} {formatted.days === 1 ? 'dia' : 'dias'} e{' '}
-              {formatted.hours} {formatted.hours === 1 ? 'hora' : 'horas'}
-            </div>
-          )}
-        </div>
-      )}
+          </div>
+        ) : (
+          <div className={styles.daysMessage}>
+            Faltam {formatted.days} {formatted.days === 1 ? 'dia' : 'dias'}
+            {formatted.hours > 0 && (
+              <>
+                {' '}
+                e {formatted.hours}{' '}
+                {formatted.hours === 1 ? 'hora' : 'horas'}
+              </>
+            )}
+            <span className={styles.ellipsis} aria-hidden="true">
+              <span className={styles.dot}>.</span>
+              <span className={styles.dot}>.</span>
+              <span className={styles.dot}>.</span>
+            </span>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
