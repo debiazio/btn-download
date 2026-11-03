@@ -40,5 +40,8 @@
   },
   "renderiza-preco-ondonto-551":{
     "component": "renderizapreco551"
+  },
+  "cronometro-blackfriday":{
+    "component": "temporizadorShelf"
   }
 }
