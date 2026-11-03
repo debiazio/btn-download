@@ -31,7 +31,7 @@
   color: #FFA527;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(2.5rem, 3vw, 1.8rem);
   line-height: 1;
   letter-spacing: 0.02em;
 }
@@ -41,7 +41,7 @@
   color: #FFA527;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  font-size: clamp(2.5rem, 4vw, 2.4rem);
   text-align: center;
   line-height: 1.2;
 }
@@ -70,6 +70,7 @@
 }
 
 @keyframes dotBlink {
+
   0%,
   80%,
   100% {
@@ -94,7 +95,7 @@
   justify-content: center;
   align-items: center;
   background-color: #FFA527;
-  color: #1e1e1e;
+  color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 3.8rem;
   font-weight: 900;
@@ -146,8 +147,21 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .daysMessage {
+    white-space: normal;
+    margin-bottom: 36px;
+  }
+
+  .timerContainer {
+    background-image: url('https://madumfm2.vtexassets.com/assets/vtex.file-manager-graphql/images/022c17f6-0f0e-46a9-883a-87e381ff0203___1e8e00efb2ca7dd702e33092ba8cc725.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    height: 568px;
+  }
+
   .digit {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     width: 2rem;
     height: 2.5rem;
   }
@@ -157,6 +171,6 @@
   }
 
   .faltamLabel {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
